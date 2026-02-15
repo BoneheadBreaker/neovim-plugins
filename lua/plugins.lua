@@ -11,7 +11,7 @@ return {
     end
   },
 
-  -- 2. Theme (Tokyo Night)
+  -- 2. Tokyo Night (The theme)
   {
     "folke/tokyonight.nvim",
     lazy = false,
@@ -28,7 +28,6 @@ return {
     "nvim-treesitter/nvim-treesitter",
     build = ":TSUpdate",
     config = function()
-      -- Using pcall to prevent the error you saw
       local status, ts = pcall(require, "nvim-treesitter.configs")
       if not status then return end
       ts.setup({

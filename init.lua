@@ -20,12 +20,11 @@ vim.opt.autowrite = true
 vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
 vim.api.nvim_set_hl(0, "NormalNC", { bg = "none" })
 
--- 4. Neovide "Glass" Config
+-- 4. Neovide glassy effect
 if vim.g.neovide then
-    vim.g.neovide_opacity = 0.3 -- Very transparent as requested
+    vim.g.neovide_opacity = 0.3
     vim.g.neovide_window_blurred = true
     vim.g.neovide_cursor_vfx_mode = "railgun"
     vim.g.neovide_no_idle = true
-    -- Ensure you have Scoop installed JetBrainsMono-NF
     vim.opt.guifont = "JetBrainsMono NF:h12"
 end
